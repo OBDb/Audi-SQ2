@@ -1,12 +1,12 @@
 command_id: 713.77D.221810|fc=1
 test_cases:
 - expected_values:
-    AUDI_MQB_HYD_BRK_BST_ACT: 0
+    SQ2_HYDR_BRAKEBOOST: 0
   response: |-
     77D100C621810010014
     77D21FCC100000000AA
 - expected_values:
-    AUDI_MQB_HYD_BRK_BST_ACT: 0
+    SQ2_HYDR_BRAKEBOOST: 0
   response: |-
     77D100C621810010014
     77D21FCD900000000AA

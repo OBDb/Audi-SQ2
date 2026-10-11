@@ -1,5 +1,5 @@
 command_id: 746.7B0.22260A|fc=1
 test_cases:
 - expected_values:
-    AUDI_AAT_CABIN: 18
+    SQ2_OUTSIDE_T_SYSTEM: 18
   response: 7B00462260A88
