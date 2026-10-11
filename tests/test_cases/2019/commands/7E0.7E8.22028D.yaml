@@ -1,11 +1,11 @@
 command_id: 7E0.7E8.22028D
 test_cases:
 - expected_values:
-    AUDI_ECU_TEMP: 39
+    SQ2_ENG_CTRL_MODULE_T: 39
   response: 7E80562028D0186
 - expected_values:
-    AUDI_ECU_TEMP: 40
+    SQ2_ENG_CTRL_MODULE_T: 40
   response: 7E80562028D0190
 - expected_values:
-    AUDI_ECU_TEMP: 41
+    SQ2_ENG_CTRL_MODULE_T: 41
   response: 7E80562028D019A

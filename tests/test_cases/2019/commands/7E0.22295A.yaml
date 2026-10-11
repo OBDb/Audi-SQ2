@@ -1,5 +1,5 @@
 command_id: 7E0.22295A
 test_cases:
 - expected_values:
-    AUDI_ODO_V2: 83900
+    SQ2_ODO_ECM: 83900
   response: 7E80662295A0147BC
