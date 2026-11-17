@@ -2,7 +2,7 @@ command_id: 713.77D.2218B6|fc=1
 test_cases:
 - expected_values:
     SQ2_CSTEER: 0
-    SQ2_CSTEER_ODO_LAST_ACTIVATED: 1
+    SQ2_CSTEER_ODO_LAST_ACTIVATED: 83859
     SQ2_CSTEER_STEERING_TORQUE: 0
   response: |-
     77D10096218B6010147
