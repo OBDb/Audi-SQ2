@@ -1,5 +1,5 @@
 command_id: 746.7B0.222609|fc=1,din=03
 test_cases:
 - expected_values:
-    SQ2_AAT_FROMCABIN: -60
+    SQ2_AAT_FROMCABIN: 18
   response: 7B00462260988

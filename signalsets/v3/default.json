@@ -216,9 +216,9 @@
   ]},
 { "hdr": "713", "rax": "77D", "fcm1": true, "cmd": {"22": "18B6"}, "freq": 0.25, "dbgfilter": { "from": 2020 },
   "signals": [
-    {"id": "SQ2_CSTEER",                    "path": "Control", "fmt": {"bix": 6,  "len": 1,  "max": 1,              "unit": "offon"        }, "name": "Counter steer support"},
-    {"id": "SQ2_CSTEER_ODO_LAST_ACTIVATED", "path": "Control", "fmt": {"bix": 8,  "len": 24, "max": 1,              "unit": "kilometers"   }, "name": "Counter steer support, odometer"},
-    {"id": "SQ2_CSTEER_STEERING_TORQUE",    "path": "Control", "fmt": {"bix": 32, "len": 16, "max": 1, "div": 1000, "unit": "newtonMeters" }, "name": "Counter steer support, steering torque"}
+    {"id": "SQ2_CSTEER",                    "path": "Control", "fmt": {"bix": 6,  "len": 1,  "max": 1,                     "unit": "offon"        }, "name": "Counter steer support"},
+    {"id": "SQ2_CSTEER_ODO_LAST_ACTIVATED", "path": "Control", "fmt": {"bix": 8,  "len": 24, "max": 16777215,              "unit": "kilometers"   }, "name": "Counter steer support, odometer"},
+    {"id": "SQ2_CSTEER_STEERING_TORQUE",    "path": "Control", "fmt": {"bix": 32, "len": 16, "max": 1,        "div": 1000, "unit": "newtonMeters" }, "name": "Counter steer support, steering torque"}
   ]},
 { "hdr": "713", "rax": "77D", "fcm1": true, "dbg": true, "cmd": {"22": "2005"}, "freq": 1,
   "signals": [
@@ -270,7 +270,7 @@
   ]},
 { "hdr": "746", "rax": "7B0", "fcm1": true, "din": "03", "cmd": {"22": "2609"}, "freq": 1, "dbgfilter": { "from": 2020 },
   "signals": [
-    {"id": "SQ2_AAT_FROMCABIN", "path": "Climate", "fmt": { "len": 8, "max": 63.5, "min": -64, "div": 2, "sign": true, "unit": "celsius" }, "name": "Outside temperature, from cabin"}
+    {"id": "SQ2_AAT_FROMCABIN", "path": "Climate", "fmt": { "len": 8, "max": 77.5, "min": -50, "div": 2, "add": -50, "unit": "celsius" }, "name": "Outside temperature, from cabin"}
   ]},
 { "hdr": "746", "rax": "7B0", "fcm1": true, "cmd": {"22": "260A"}, "freq": 5, "dbgfilter": { "from": 2020 },
   "signals": [
@@ -1998,7 +1998,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"22": "20A1"}, "freq": 5, "dbgfilter": { "from": 2020 },
   "signals": [
-    {"id": "SQ2_PQ35_CALCULATED_OIL_T", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Calculated oil temperature", "suggestedMetric": "engineOilTemperature"}
+    {"id": "SQ2_PQ35_CALCULATED_OIL_T", "path": "Engine", "fmt": { "len": 16, "max": 3276.7, "min": -3276.8, "div": 10, "sign": true, "unit": "celsius" }, "name": "Calculated oil temperature", "suggestedMetric": "engineOilTemperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "20A2"}, "freq": 1,
   "signals": [
@@ -2844,7 +2844,7 @@
   ]},
 { "hdr": "7E1", "cmd": {"22": "3841"}, "freq": 1, "dbgfilter": { "from": 2020 },
   "signals": [
-    {"id": "SQ2_ODO_V1", "path": "Trips", "fmt": { "len": 32, "max": 429496729.5, "div": 10, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+    {"id": "SQ2_ODO_V1", "path": "Trips", "fmt": { "len": 32, "blsb": true, "max": 429496729.5, "div": 10, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7E1", "cmd": {"22": "3887"}, "freq": 30, "dbgfilter": { "from": 2020 },
   "signals": [
